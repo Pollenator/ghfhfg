@@ -1,0 +1,164 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;0,800;1,100;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+ font-family:'Poppins';
+}
+nav{
+  height: 80px;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: -80px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 4px 100px 0px 0px;
+}
+nav ul li a{
+  font-size: 15px;
+  color:#000000;
+}
+a.active,a:hover{
+  color: #d1884f;
+  transition: .25s;
+}
+nav ul li a i {
+  margin-right: 15px; 
+}
+.checkbtn{
+ font-size: 25px;
+ float: right;
+ line-height: 80px;
+ margin-right: -40px;
+ cursor: pointer;
+ display: none;
+}
+.checkbtn:hover{
+  color:#d1884f;
+  transition: .25s;
+}
+#check{
+  display: none;
+}
+.button a{
+  text-decoration: none;
+  color:#fffefe;
+  font-weight: 200;
+  padding: 1px 18px;
+  background: #008baf;
+  margin-top: 1px;
+  margin-left:145px;
+}
+@media (max-width: 640px){
+  .checkbtn{
+    display:block
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #89daee;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 18px;
+    color: #eee;
+  }
+  #check:checked ~ ul{
+    left:0;
+  }
+  }
+  h1{
+    font-size: 25px;
+    font-weight:350;
+    margin-top: 100px;
+    margin-left:150px;
+    color:#008baf;
+  
+  }
+  h2{
+    font-size: 20px;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-left:145px;
+    font-weight: 500;
+  }
+  
+  
+  .subheading {
+    font-size: 40px;
+    max-width: 650px; 
+    margin-top: 10px;
+    margin-left:145px;
+    font-weight: 530;
+    color:#008baf;
+}
+
+@media screen and (max-width: 640px) {
+    .subheading {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-left:10px;
+        flex-direction: column;
+  
+    }
+    .info{
+      font-size: 15px;
+      margin-top: 10px;
+      margin-left:10px;
+      flex-direction: column;
+    }
+    .welcome{
+      font-size:15px;
+      margin-top: 10px;
+      margin-left:10px;
+      flex-direction: column;
+    }
+    .pic{
+      position: relative;
+      bottom: 151px;
+      right: -81px;
+    }
+}
+ span{
+  color:#d1884f;
+}
+
+  
+.image{
+  width: 55%;
+  max-width:700px;
+  height:auto;
+  position:absolute;
+  bottom: 100px;
+  right:100px;
+  
+}
+ .pic{ 
+  width: 50%;
+  max-width: 500px;
+  height: 100%;
+  float: right;
+  margin: -400px 230px 0 0;
+}
+
+
